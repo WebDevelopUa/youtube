@@ -1,0 +1,56 @@
+body {
+    background-color: #2185d0;
+}
+
+.video-item {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+.video-item.item img {
+    width: 100px;
+    min-width: 100px;
+    height: 60px;
+}
+
+.video-item:hover {
+    background-color: ghostwhite;
+}
+
+.white {
+    color: white !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    min-height: calc(100vh - 15em);
+}
+
+.mt-5 {
+    margin-top: 5em !important;
+}
+
+.z-index {
+    z-index: 999999;
+}
+
+.display-none {
+    display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large screen only"]:not(.mobile),
+    [class*="widescreen only"]:not(.mobile),
+    [class*="or lower hidden"] {
+        display: none !important;
+    }
+}
+
+
